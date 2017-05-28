@@ -1,0 +1,30 @@
+package ru.stepan1404.daylies.commands;
+
+import net.minecraft.command.CommandBase;
+import net.minecraft.command.ICommandSender;
+import net.minecraft.command.WrongUsageException;
+
+public class ReloadCommand extends CommandBase{
+
+	@Override
+	public String getCommandName() {
+		return "dailyes";
+	}
+
+	@Override
+	public String getCommandUsage(ICommandSender p_71518_1_) {
+		return "/dailyes reload";
+	}
+
+	@Override
+	public void processCommand(ICommandSender p_71515_1_, String[] lines) {
+		if(lines.length > 0){
+			
+		}
+		else
+        {
+            throw new WrongUsageException("Must be write a task!", new Object[0]);
+        }
+	}
+
+}

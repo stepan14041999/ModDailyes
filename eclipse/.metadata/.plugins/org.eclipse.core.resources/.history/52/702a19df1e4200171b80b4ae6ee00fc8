@@ -1,0 +1,276 @@
+package ru.stepan1404.daylies.gui;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.lwjgl.opengl.GL11;
+import org.lwjgl.opengl.GL12;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.Block;
+import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.renderer.OpenGlHelper;
+import net.minecraft.client.renderer.RenderHelper;
+import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.client.renderer.entity.RenderItem;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
+
+@SideOnly(Side.CLIENT)
+public class GuiDailyRewards extends GuiScreen{
+	
+	protected static final RenderItem itemRenderer = new RenderItem();
+	private float rotate = 0.0F;
+    double x = 0.0D,x1 = 0.0D;
+	private int day;
+	private double inSin = Math.PI/4.0D, inSin1 = Math.PI/2.0D;
+	private boolean isItem = false, isBlock = false;
+	private int amount = 1;
+	private String materialName = "minecraft:stone";
+	private List<String> allItems;
+	private List<String> data;
+	private int damage = 0;
+	
+	public GuiDailyRewards(int day, String text) {
+		this.day = day;
+		allItems = Arrays.asList(text.split(", "));
+		data = Arrays.asList(allItems.get(day-1).split(":"));
+		this.materialName = data.get(1) + ":" + data.get(2);
+		this.amount = Integer.valueOf(data.get(0));
+		if(data.size()==4)
+		this.damage = Integer.valueOf(data.get(3));
+	}
+	
+	public void initGui() {
+		this.buttonList.add(new GuiButton(0, this.width/2 - 100, this.height/2 + 90, "\u041f\u0440\u0438\u043d\u044f\u0442\u044c"));
+		checkName(this.materialName);
+	}
+	
+	protected void actionPerformed(GuiButton p_146284_1_) {
+		if(p_146284_1_.id == 0){
+			this.mc.displayGuiScreen((GuiScreen)null);
+            this.mc.setIngameFocus();
+		}
+	}
+	
+	public void drawStatistics(){
+    	mc.getTextureManager().bindTexture(new ResourceLocation("daylies", "textures/gui/profile.png"));
+    	GL11.glPushMatrix();
+    	GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+        GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MIN_FILTER, GL11.GL_LINEAR);
+        GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MAG_FILTER, GL11.GL_LINEAR);
+        GL11.glEnable(GL11.GL_BLEND);
+        OpenGlHelper.glBlendFunc(770, 771, 1, 0);
+        Tessellator ts = Tessellator.instance;
+        ts.setColorRGBA_F(1.0F, 1.0F, 1.0F, 1.0F);
+        ts.startDrawingQuads();
+        ts.addVertexWithUV(5.0F, 45.0F, 0.0F, 0.0D, 1.0D);
+        ts.addVertexWithUV(45.0F, 45.0F, 0.0F, 1.0D, 1.0D);
+        ts.addVertexWithUV(45.0F, 5.0F, 0.0F, 1.0D, 0.0D);
+        ts.addVertexWithUV(5.0F, 5.0F, 0.0F, 0.0D, 0.0D);
+        ts.draw();
+        GL11.glDisable(GL11.GL_BLEND);
+        GL11.glPopMatrix();
+
+        mc.getTextureManager().bindTexture(new ResourceLocation("daylies", "textures/gui/profile_end.png"));
+    	GL11.glPushMatrix();
+    	GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+        GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MIN_FILTER, GL11.GL_LINEAR);
+        GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MAG_FILTER, GL11.GL_LINEAR);
+        GL11.glEnable(GL11.GL_BLEND);
+        OpenGlHelper.glBlendFunc(770, 771, 1, 0);
+        ts.setColorRGBA_F(1.0F, 1.0F, 1.0F, 1.0F);
+        ts.startDrawingQuads();
+        ts.addVertexWithUV(44.0F, 45.0F, 0.0F, 0.0D, 0.1D);
+        ts.addVertexWithUV(65.0F, 45.0F, 0.0F, 0.1D, 0.1D);
+        ts.addVertexWithUV(65.0F, 5.0F, 0.0F, 0.1D, 0.0D);
+        ts.addVertexWithUV(44.0F, 5.0F, 0.0F, 0.0D, 0.0D);
+        ts.draw();
+        GL11.glDisable(GL11.GL_BLEND);
+        GL11.glPopMatrix();
+        
+        mc.getTextureManager().bindTexture(new ResourceLocation("daylies", "textures/gui/profile_end.png"));
+    	GL11.glPushMatrix();
+    	GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+        GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MIN_FILTER, GL11.GL_LINEAR);
+        GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MAG_FILTER, GL11.GL_LINEAR);
+        GL11.glEnable(GL11.GL_BLEND);
+        OpenGlHelper.glBlendFunc(770, 771, 1, 0);
+        ts.setColorRGBA_F(1.0F, 1.0F, 1.0F, 1.0F);
+        ts.startDrawingQuads();
+        ts.addVertexWithUV(65.0F, 45.0F, 0.0F, 0.0D, 1.0D);
+        ts.addVertexWithUV(105.0F, 45.0F, 0.0F, 1.0D, 1.0D);
+        ts.addVertexWithUV(105.0F, 5.0F, 0.0F, 1.0D, 0.0D);
+        ts.addVertexWithUV(65.0F, 5.0F, 0.0F, 0.0D, 0.0D);
+        ts.draw();
+        GL11.glDisable(GL11.GL_BLEND);
+        GL11.glPopMatrix();
+        
+        this.fontRendererObj.drawString(this.mc.getSession().getUsername(), 46, 12, -1, true);
+        this.fontRendererObj.drawString("Day " + this.day, 46, 27, -1, true);
+	}
+
+	public void drawScreen(int p_73863_1_, int p_73863_2_, float p_73863_3_){
+		this.drawDefaultBackground();
+		GL11.glEnable(GL11.GL_ALPHA_TEST);
+		ResourceLocation texture = new ResourceLocation("daylies", "textures/gui/stand.png");
+		drawStatistics();
+		drawTextureRectMainReward();
+		drawTextureRectPointer();
+		for(int i = 1;i<day;i++){
+			drawTextureRect(texture, this.width/2.0f - 30 - 50*i, this.height/2.0f - 20, this.width/2.0f + 10 - 50*i, this.height/2.0f + 20, 0.0F);		
+		}
+        GL11.glEnable(GL12.GL_RESCALE_NORMAL);
+        RenderHelper.enableGUIStandardItemLighting();
+		for(int i = 1;i<day;i--){
+			List<String> data1 = Arrays.asList(allItems.get(day-i).split(":"));
+			String materialName1 = data1.get(1) + ":" + data1.get(2);
+			int amount1 = Integer.valueOf(data1.get(0));
+			int damage1 = 0;
+			if(data1.size()==4)
+			damage1 = Integer.valueOf(data1.get(3));
+			checkName(materialName1);
+			System.out.println(materialName1);
+			if(isBlock){
+	        	itemRenderer.renderItemAndEffectIntoGUI(this.mc.fontRenderer, this.mc.getTextureManager(), new ItemStack(getBlock(materialName1), amount1, damage1), this.width/2 - 50*i - 18, this.height/2-8);
+	        	itemRenderer.renderItemOverlayIntoGUI(this.mc.fontRenderer, this.mc.getTextureManager(), new ItemStack(getBlock(materialName1), amount1, damage1), this.width/2 - 50*i - 18, this.height/2-8);
+	        	isBlock = false;
+	        } else 
+	        if(isItem){
+	        	itemRenderer.renderItemAndEffectIntoGUI(this.mc.fontRenderer, this.mc.getTextureManager(), new ItemStack(getItem(materialName1), amount1, damage1), this.width/2 - 50*i - 18, this.height/2-8);
+	        	itemRenderer.renderItemOverlayIntoGUI(this.mc.fontRenderer, this.mc.getTextureManager(), new ItemStack(getItem(materialName1), amount1, damage1), this.width/2 - 50*i - 18, this.height/2-8);
+	        	isItem = false;
+	        }
+		}
+		RenderHelper.disableStandardItemLighting();
+        GL11.glDisable(GL12.GL_RESCALE_NORMAL);
+		for(int i = day + 1,o = 1;i<=7;o++,i++){
+			drawTextureRect(texture, this.width/2.0f - 10 + 50*o, this.height/2.0f - 20, this.width/2.0f + 30 + 50*o, this.height/2.0f + 20, 0.0F);
+		}	
+		this.drawString(this.fontRendererObj, String.valueOf("\u041f\u043e\u043b\u0443\u0447\u0438\u0442\u0435 \u0438 \u0440\u0430\u0441\u043f\u0438\u0448\u0438\u0442\u0435\u0441\u044c\u0021"), this.width/2 - this.fontRendererObj.getStringWidth(String.valueOf("Получите и распишитесь!"))/2, this.height/2 + 70, -1);
+		super.drawScreen(p_73863_1_, p_73863_2_, p_73863_3_);
+	}
+	
+    public void drawTextureRect(ResourceLocation rl, double x1, double y1, double x2, double y2, double z){
+    	mc.getTextureManager().bindTexture(rl);
+    	GL11.glPushMatrix();
+    	GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+        GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MIN_FILTER, GL11.GL_LINEAR);
+        GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MAG_FILTER, GL11.GL_LINEAR);
+        GL11.glEnable(GL11.GL_BLEND);
+        OpenGlHelper.glBlendFunc(770, 771, 1, 0);
+        Tessellator ts = Tessellator.instance;
+        ts.setColorRGBA_F(1.0F, 1.0F, 1.0F, 1.0F);
+        ts.startDrawingQuads();
+        ts.addVertexWithUV(x1, y2, z, 0.0D, 1.0D);
+        ts.addVertexWithUV(x2, y2, z, 1.0D, 1.0D);
+        ts.addVertexWithUV(x2, y1, z, 1.0D, 0.0D);
+        ts.addVertexWithUV(x1, y1, z, 0.0D, 0.0D);
+        ts.draw();
+        GL11.glDisable(GL11.GL_BLEND);
+        GL11.glPopMatrix();
+    }
+    
+    public void drawTextureRectMainReward(){
+    	mc.getTextureManager().bindTexture(new ResourceLocation("daylies", "textures/gui/standMain.png"));
+    	GL11.glPushMatrix();
+    	GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+        GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MIN_FILTER, GL11.GL_LINEAR);
+        GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MAG_FILTER, GL11.GL_LINEAR);
+        GL11.glEnable(GL11.GL_BLEND);
+		GL11.glTranslatef(this.width/2.0f, this.height/2.0f, 0.0F);
+        OpenGlHelper.glBlendFunc(770, 771, 1, 0);
+        Tessellator ts = Tessellator.instance;
+        ts.setColorRGBA_F(1.0F, 1.0F, 1.0F, 1.0F);
+        ts.startDrawingQuads();
+        if(inSin1 <= Math.PI){
+        	x1 = (int) (Math.sin(inSin)*70);
+        	inSin1 += Math.PI/500.0D;
+        } else {
+        	x1 = 0;
+        }
+        ts.addVertexWithUV(-30.0F-x1, 30.0F+x1, 0.0F, 0.0D, 1.0D);
+        ts.addVertexWithUV(30.0F+x1, 30.0F+x1, 0.0F, 1.0D, 1.0D);
+        ts.addVertexWithUV(30.0F+x1, -30.0F-x1, 0.0F, 1.0D, 0.0D);
+        ts.addVertexWithUV(-30.0F-x1, -30.0F-x1, 0.0F, 0.0D, 0.0D);
+        ts.draw();
+        GL11.glDisable(GL11.GL_BLEND);
+        GL11.glPopMatrix();
+    }
+    
+    public void drawTextureRectPointer(){
+    	mc.getTextureManager().bindTexture(new ResourceLocation("daylies", "textures/gui/current.png"));
+    	GL11.glPushMatrix();
+    	GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+        GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MIN_FILTER, GL11.GL_LINEAR);
+        GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MAG_FILTER, GL11.GL_LINEAR);
+        GL11.glEnable(GL11.GL_BLEND);
+		rotate = rotate + 1.2F;
+		GL11.glTranslatef(this.width/2.0f, this.height/2.0f, 0.0F);
+    	GL11.glRotated(rotate, 0.0f, 0.0f, 1.0f);
+        OpenGlHelper.glBlendFunc(770, 771, 1, 0);
+        Tessellator ts = Tessellator.instance;
+        ts.setColorRGBA_F(1.0F, 1.0F, 1.0F, 1.0F);
+        ts.startDrawingQuads();
+        if(inSin <= Math.PI){
+        	x = (int) (Math.sin(inSin)*70);
+        	inSin += Math.PI/120.0D;
+        } else {
+        	x = 0;
+        }
+        ts.addVertexWithUV(-40.0F+x, 40.0F+x, 0.0F, 0.0D, 1.0D);
+        ts.addVertexWithUV(40.0F+x, 40.0F+x, 0.0F, 1.0D, 1.0D);
+        ts.addVertexWithUV(40.0F+x, -40.0F+x, 0.0F, 1.0D, 0.0D);
+        ts.addVertexWithUV(-40.0F+x, -40.0F+x, 0.0F, 0.0D, 0.0D);
+        ts.draw();
+        GL11.glDisable(GL11.GL_BLEND);
+        GL11.glPopMatrix();
+        
+        GL11.glPushMatrix();
+        GL11.glEnable(GL12.GL_RESCALE_NORMAL);
+        RenderHelper.enableGUIStandardItemLighting();
+        GL11.glScalef(2.0f, 2.0f, 0.0F);
+		checkName(this.materialName);
+        if(isBlock){
+        	itemRenderer.renderItemAndEffectIntoGUI(this.mc.fontRenderer, this.mc.getTextureManager(), new ItemStack(getBlock(this.materialName), this.amount, this.damage), this.width/4-8, this.height/4-8);
+        	itemRenderer.renderItemOverlayIntoGUI(this.mc.fontRenderer, this.mc.getTextureManager(), new ItemStack(getBlock(this.materialName), this.amount, this.damage), this.width/4-8, this.height/4-8);
+        	isBlock = false;
+        } else 
+        if(isItem){
+        	itemRenderer.renderItemAndEffectIntoGUI(this.mc.fontRenderer, this.mc.getTextureManager(), new ItemStack(getItem(this.materialName), this.amount, this.damage), this.width/4-8, this.height/4-8);
+        	itemRenderer.renderItemOverlayIntoGUI(this.mc.fontRenderer, this.mc.getTextureManager(), new ItemStack(getItem(this.materialName), this.amount, this.damage), this.width/4-8, this.height/4-8);
+        	isItem = false;
+        }
+        GL11.glScalef(0.5f, 0.5f, 0.0F);
+        RenderHelper.disableStandardItemLighting();
+        GL11.glDisable(GL12.GL_RESCALE_NORMAL);
+        GL11.glPopMatrix();
+    }
+    
+    public void checkName(String name) {
+    	Block block = (Block) Block.blockRegistry.getObject(name);
+    	if (block == null || block == Blocks.air){
+    		Item item = (Item) Item.itemRegistry.getObject(name);
+    		if(item == null)
+    			throw new NullPointerException("Could not find any blocks named " + name);
+    		else
+    			isItem = true;
+    	} else
+    		isBlock = true;
+    }
+    
+    public Block getBlock(String name){
+    	return (Block) Block.blockRegistry.getObject(name);
+    }
+    
+    public Item getItem(String name){
+    	return (Item) Item.itemRegistry.getObject(name);
+    }
+
+}

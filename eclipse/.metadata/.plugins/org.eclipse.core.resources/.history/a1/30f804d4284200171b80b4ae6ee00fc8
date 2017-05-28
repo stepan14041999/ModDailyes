@@ -1,0 +1,18 @@
+package ru.stepan1404.daylies;
+
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+public class CommonProxy {
+
+	public void doSomething(FMLPreInitializationEvent e){
+		
+	}
+
+	public void openGui(int day, String text){
+
+	}
+	
+	public void registerCommands(){
+		
+	}
+}

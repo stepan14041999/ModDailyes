@@ -1,0 +1,96 @@
+package ru.stepan1404.daylies.messages;
+
+import java.util.List;
+
+import cpw.mods.fml.common.network.ByteBufUtils;
+import cpw.mods.fml.common.network.simpleimpl.IMessage;
+import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;
+import cpw.mods.fml.common.network.simpleimpl.MessageContext;
+import io.netty.buffer.ByteBuf;
+import net.minecraft.block.Block;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.world.WorldServer;
+import ru.stepan1404.daylies.Daylies;
+import ru.stepan1404.daylies.utils.OpenGui;
+import scala.actors.threadpool.Arrays;
+
+public class MessageGui implements IMessage {
+    
+    private String text;
+	private int day;
+
+    public MessageGui() { }
+    
+    public MessageGui(int day, String text) {
+    	this.day = day;
+    	this.text = text;
+    }
+
+    /*public MessageGui(String text) {
+        this.text = text;
+    }*/
+
+    @Override
+    public void fromBytes(ByteBuf buf) {
+    	day = ByteBufUtils.readVarInt(buf, 5);
+        text = ByteBufUtils.readUTF8String(buf); // this class is very useful in general for writing more complex objects
+    }
+
+    @Override
+    public void toBytes(ByteBuf buf) {
+    	ByteBufUtils.writeVarInt(buf, day, 5);
+        ByteBufUtils.writeUTF8String(buf, text);
+    }
+
+    public static class MessageGuiHandler implements IMessageHandler<MessageGui, IMessage> {
+        
+        private boolean isItem = false;
+		private boolean isBlock = false;
+		private List<String> data;
+		private String materialName = "minecraft:diamond";
+		private int amount = 1;
+		private int damage = 0;
+		private EntityPlayerMP player;
+
+		@Override
+        public IMessage onMessage(MessageGui message, MessageContext ctx) {
+            OpenGui.openGui(message.day, message.text);
+            data = Arrays.asList(message.text.split(":"));
+            amount = Integer.valueOf(data.get(0));
+            materialName = data.get(1) + ":" + data.get(2);
+            if(data.size() == 4) damage = Integer.valueOf(data.get(3));
+            checkName(materialName);
+            player = ctx.getServerHandler().playerEntity;
+            if(isItem)
+            player.worldObj.spawnEntityInWorld(new EntityItem(player.worldObj, player.playerLocation.posX, player.playerLocation.posY, player.playerLocation.posZ, new ItemStack(getItem(materialName), damage, damage)));
+            if(isBlock)
+            player.worldObj.spawnEntityInWorld(new EntityItem(player.worldObj, player.playerLocation.posX, player.playerLocation.posY, player.playerLocation.posZ, new ItemStack(getBlock(materialName), amount, damage)));
+            return null; // no response in this case
+        }
+        
+        public void checkName(String name) {
+        	Block block = (Block) Block.blockRegistry.getObject(name);
+        	if (block == null || block == Blocks.air){
+        		Item item = (Item) Item.itemRegistry.getObject(name);
+        		if(item == null)
+        			throw new NullPointerException("Could not find any blocks named " + name);
+        		else
+        			isItem = true;
+        	} else
+        		isBlock = true;
+        }
+        
+        public Block getBlock(String name){
+        	return (Block) Block.blockRegistry.getObject(name);
+        }
+        
+        public Item getItem(String name){
+        	return (Item) Item.itemRegistry.getObject(name);
+        }
+    }
+}

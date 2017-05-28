@@ -1,0 +1,10 @@
+package ru.stepan1404.daylies;
+
+public class ServerProxy extends CommonProxy {
+	
+	public void doSomething(){
+		System.out.println("Test is done!");
+		
+	}
+
+}

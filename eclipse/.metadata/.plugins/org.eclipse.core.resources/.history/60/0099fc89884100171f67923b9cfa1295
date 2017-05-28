@@ -1,0 +1,15 @@
+package ru.stepan1404.daylies.utils;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiScreen;
+import ru.stepan1404.daylies.gui.GuiDailyRewards;
+
+@SideOnly(Side.CLIENT)
+public class OpenGui {
+
+	public static void openGui(int day){
+		Minecraft.getMinecraft().displayGuiScreen(new GuiDailyRewards(day));
+	}
+}

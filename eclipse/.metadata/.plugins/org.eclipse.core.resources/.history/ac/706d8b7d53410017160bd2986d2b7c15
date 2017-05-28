@@ -1,0 +1,11 @@
+package ru.stepan1404.daylies.utils;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiScreen;
+
+public class OpenGui {
+
+	public static void openGui(GuiScreen screen){
+		Minecraft.getMinecraft().displayGuiScreen(screen);
+	}
+}

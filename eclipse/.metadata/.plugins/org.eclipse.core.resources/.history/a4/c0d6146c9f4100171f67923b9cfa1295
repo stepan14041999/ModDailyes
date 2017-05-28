@@ -1,0 +1,49 @@
+package ru.stepan1404.daylies.utils;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import javafx.scene.chart.LineChart;
+import scala.actors.threadpool.Arrays;
+
+public class RewardBase {
+	
+	public static List<String> rewards = new ArrayList<String>();
+	public static Map<String, Integer> amount = new HashMap<String, Integer>();
+	
+	public static void loadRewards(FMLPreInitializationEvent e){
+		File file = new File(e.getModConfigurationDirectory() + "/daylies/rewards.cfg");
+		try {
+			if (file.exists()) {
+
+				FileReader fr;
+
+				fr = new FileReader(file);
+
+				BufferedReader br = new BufferedReader(fr);
+				String line;
+
+				while ((line = br.readLine()) != null) {
+					rewards.add(line.substring(2));
+					amount.put(line.substring(2), Integer.valueOf(line.substring(0, line.indexOf(':'))));
+				}
+				//System.out.println(amount);
+				fr.close();
+				br.close();
+			}
+		} catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+	}
+
+}

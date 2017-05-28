@@ -1,0 +1,102 @@
+---- Minecraft Crash Report ----
+// Why is it breaking :(
+
+Time: 26.05.17 18:20
+Description: Rendering screen
+
+java.lang.ArrayIndexOutOfBoundsException: 7
+	at java.util.Arrays$ArrayList.get(Unknown Source)
+	at ru.stepan1404.daylies.gui.GuiDailyRewards.drawScreen(GuiDailyRewards.java:133)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1137)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at java.util.Arrays$ArrayList.get(Unknown Source)
+	at ru.stepan1404.daylies.gui.GuiDailyRewards.drawScreen(GuiDailyRewards.java:133)
+
+-- Screen render details --
+Details:
+	Screen name: ru.stepan1404.daylies.gui.GuiDailyRewards
+	Mouse location: Scaled: (213, 119). Absolute: (427, 240)
+	Screen size: Scaled: (427, 240). Absolute: (854, 480). Scale factor of 2
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Notch'/330, l='MpServer', x=195,20, y=77,59, z=53,60]]
+	Chunk stats: MultiplayerChunkCache: 20, 20
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (212,64,60), Chunk: (at 4,4,12 in 13,3; contains blocks 208,0,48 to 223,255,63), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 1684462 game time, 1684462 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 17 total; [EntitySlime['Slime'/67, l='MpServer', x=176,32, y=24,00, z=44,69], EntityZombie['Zombie'/99, l='MpServer', x=210,50, y=18,00, z=33,50], EntitySpider['Spider'/100, l='MpServer', x=219,28, y=15,00, z=60,25], EntitySpider['Spider'/68, l='MpServer', x=181,28, y=28,00, z=84,09], EntityEnderman['Enderman'/101, l='MpServer', x=215,22, y=71,00, z=58,44], EntityZombie['Zombie'/69, l='MpServer', x=187,50, y=25,00, z=93,25], EntityZombie['Zombie'/70, l='MpServer', x=183,88, y=25,00, z=92,66], EntityWitch['Witch'/71, l='MpServer', x=195,53, y=27,00, z=91,94], EntityZombie['Zombie'/78, l='MpServer', x=196,81, y=68,49, z=52,16], EntityZombie['Zombie'/79, l='MpServer', x=197,69, y=69,26, z=53,69], EntityZombie['Zombie'/80, l='MpServer', x=197,69, y=69,24, z=52,75], EntitySpider['Spider'/81, l='MpServer', x=203,22, y=75,00, z=53,59], EntityZombie['Zombie'/82, l='MpServer', x=196,31, y=69,26, z=53,69], EntityZombie['Zombie'/83, l='MpServer', x=196,31, y=69,58, z=52,84], EntityItem['item.item.rottenFlesh'/84, l='MpServer', x=199,59, y=68,13, z=74,13], EntitySlime['Slime'/85, l='MpServer', x=198,69, y=27,00, z=95,56], EntityClientPlayerMP['Notch'/330, l='MpServer', x=195,20, y=77,59, z=53,60]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:984)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.8.0_131, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 860259384 bytes (820 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 5 mods loaded, 5 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJA	Forge{10.13.4.1614} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJA	daylies{0.0.1} [Daylies!] (bin) 
+	UCHIJA	IC2{2.2.827-experimental} [IndustrialCraft 2] (industrialcraft-2-2.2.827-experimental-dev.jar) 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.5.0 NVIDIA 382.05' Renderer: 'GeForce GT 755M/PCIe/SSE2'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: GeForce GT 755M/PCIe/SSE2 GL version 4.5.0 NVIDIA 382.05, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

@@ -1,0 +1,9 @@
+package ru.stepan1404.daylies;
+
+import cpw.mods.fml.common.Mod;
+
+@Mod(modid = "daylies")
+public class Daylies {
+	
+
+}

@@ -1,0 +1,13 @@
+package ru.stepan1404.daylies;
+
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import ru.stepan1404.daylies.events.LoginEvent;
+
+public class ServerProxy extends CommonProxy {
+	
+	public void doSomething(FMLPreInitializationEvent e){
+		Daylies.register(new LoginEvent(e));
+		RewardBase.loadRewards(e);
+	}
+
+}

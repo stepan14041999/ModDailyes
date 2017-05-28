@@ -1,0 +1,16 @@
+package ru.stepan1404.daylies;
+
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraft.client.Minecraft;
+import ru.stepan1404.daylies.gui.GuiDailyRewards;
+
+public class CommonProxy {
+
+	public void doSomething(FMLPreInitializationEvent e){
+		
+	}
+
+	public static void openGui(int day, String text){
+
+	}
+}

@@ -1,0 +1,205 @@
+[21:48:44] [main/INFO]: Setting user: Notch
+[21:48:45] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:48:57] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Daylies!
+[21:48:57] [Sound Library Loader/INFO]: Sound engine started
+[21:48:59] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[21:48:59] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[21:48:59] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Daylies!
+[21:48:59] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:48:59] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:49:00] [Sound Library Loader/INFO]: Sound engine started
+[23:02:04] [Client thread/INFO]: Stopping!
+[23:02:10] [main/INFO]: Setting user: Notch
+[23:02:12] [Client thread/INFO]: LWJGL Version: 2.9.1
+[23:02:27] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFil[23:02:28] [Server thread/INFO]: Loading properties
+[23:02:28] [Server thread/INFO]: Default game type: SURVIVAL
+[23:02:28] [Server thread/INFO]: Generating ke[23:02:29] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[23:02:29] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[23:02:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Daylies!
+[23:02:30] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[23:02:30] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[23:02:30] [Sound Library Loader/INFO]: Sound engine started
+[23:02:36] [Client thread/INFO]: Connecting to localhost, 25565
+[23:02:59] [Client thread/INFO]: Connecting to localhost, 25565
+[23:05:07] [Client thread/INFO]: Stopping!
+erver thread/INFO]: Preparing spawn area: 23%
+[23:02:31] [Server thread/INFO]: Done (2,308s)! For help, type "help" or "?"
+[23:02:37] [Server thread/INFO]: Notch[/127.0.0.1:60117] logged in with entity id 243 at (208.74151137784204, 72.67490443491741, 46.77499344857961)
+[23:02:37] [Server thread/INFO]: Notch joined the game
+[23:02:42] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Программа на вашем хост-компьютере разорвала установленное подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:02:42] [Server thread/INFO]: Notch left the game
+[23:02:59] [Server thread/INFO]: Notch[/127.0.0.1:60121] logged in with entity id 260 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:02:59] [Server thread/INFO]: Notch joined the game
+[23:05:08] [Server thread/INFO]: Notch lost connection: TranslatableCompone[23:05:11] [Server thread/INFO]: Loading properties
+[23:05:11] [Server thread/INFO]: Default game type: SURVIVAL
+[23:05:11] [Server thread/INFO]: Generating keypair
+[23:05:11] [Server thread/INFO]: Starting Minecraft server on *:25565
+[23:05:11] [Server thread/WARN]: **** FAILED TO BIND TO PORT!
+[23:05:11] [Server thread/WARN]: The exception [23:05:46] [Server thread/INFO]: Notch[/127.0.0.1:60255] logged in with entity id 2025 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:05:46] [Server thread/INFO]: Notch joined the game
+[23:05:53] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:05:53] [Server thread/INFO]: Notch left the game
+[23:05:53] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:05:53] [Server thread/INFO]: Notch left the game
+[23:05:53] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:05:53] [Server thread/INFO]: Notch left the game
+[23:06:27] [Server thread/INFO]: Notch[/127.0.0.1:60298] logged in with entity id 2177 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:06:27] [Server thread/INFO]: Notch joined the game
+[23:06:31] [Server thread/INFO]: Notch lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:06:31] [Server thread/INFO]: Notch left the game
+[23:06:40] [Server thread/INFO]: Notch[/127.0.0.1:60304] logged in with entity id 2243 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:06:40] [Server thread/INFO]: Notch joined the game
+[23:06:51] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:06:51] [Server thread/INFO]: Notch left the game
+[23:07:29] [Server thread/INFO]: Notch[/127.0.0.1:60349] logged in with entity id 2364 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:07:29] [Server thread/INFO]: Notch joined the game
+[23:07:38] [Server thread/INFO]: Notch lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:07:38] [Server thread/INFO]: Notch left the game
+[23:07:41] [Server thread/INFO]: Notch[/127.0.0.1:60352] logged in with entity id 2536 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:07:41] [Server thread/INFO]: Notch joined the game
+[23:07:54] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:07:54] [Server thread/INFO]: Notch left the game
+[23:07:54] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:07:54] [Server thread/INFO]: Notch left the game
+[23:07:54] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:07:54] [Server thread/INFO]: Notch left the game
+[23:11:07] [Server thread/INFO]: Notch[/127.0.0.1:60412] logged in with entity id 2970 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:11:07] [Server thread/INFO]: Notch joined the game
+[23:11:10] [Server thread/INFO]: Notch lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:11:10] [Server thread/INFO]: Notch left the game
+[23:11:19] [Server thread/INFO]: Notch[/127.0.0.1:60415] logged in with entity id 3175 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:11:19] [Server thread/INFO]: Notch joined the game
+[23:11:24] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:11:24] [Server thread/INFO]: Notch left the game
+[23:11:57] [Server thread/INFO]: Notch[/127.0.0.1:60454] logged in with entity id 3417 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:11:57] [Server thread/INFO]: Notch joined the game
+[23:12:05] [Server thread/INFO]: Notch lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:12:05] [Server thread/INFO]: Notch left the game
+[23:12:09] [Server thread/INFO]: Notch[/127.0.0.1:60460] logged in with entity id 3884 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:12:09] [Server thread/INFO]: Notch joined the game
+[23:12:16] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:12:16] [Server thread/INFO]: Notch left the game
+[23:13:07] [Server thread/INFO]: Notch[/127.0.0.1:60515] logged in with entity id 4333 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:13:07] [Server thread/INFO]: Notch joined the game
+[23:13:24] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:13:24] [Server thread/INFO]: Notch left the game
+[23:15:45] [Server thread/INFO]: Notch[/127.0.0.1:60570] logged in with entity id 5288 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:15:45] [Server thread/INFO]: Notch joined the game
+[23:16:14] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:16:14] [Server thread/INFO]: Notch left the game
+[23:19:40] [Server thread/INFO]: Notch[/127.0.0.1:60640] logged in with entity id 6172 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:19:40] [Server thread/INFO]: Notch joined the game
+[23:19:43] [Server thread/INFO]: Notch lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:19:43] [Server thread/INFO]: Notch left the game
+[23:19:56] [Server thread/INFO]: Notch[/127.0.0.1:60644] logged in with entity id 6208 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:19:56] [Server thread/INFO]: Notch joined the game
+[23:20:20] [Server thread/INFO]: Notch lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:20:20] [Server thread/INFO]: Notch left the game
+[23:21:37] [Server thread/INFO]: Notch[/127.0.0.1:60717] logged in with entity id 7078 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:21:37] [Server thread/INFO]: Notch joined the game
+[23:31:36] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:31:36] [Server thread/INFO]: Notch left the game
+[23:32:14] [Server thread/INFO]: Notch[/127.0.0.1:64485] logged in with entity id 20751 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:32:14] [Server thread/INFO]: Notch joined the game
+[23:32:17] [Server thread/INFO]: Notch lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:32:17] [Server thread/INFO]: Notch left the game
+[23:33:05] [Server thread/INFO]: Notch[/127.0.0.1:64744] logged in with entity id 20976 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:33:05] [Server thread/INFO]: Notch joined the game
+[23:33:08] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:33:08] [Server thread/INFO]: Notch left the game
+[23:33:52] [Server thread/INFO]: Notch[/127.0.0.1:65019] logged in with entity id 21310 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:33:52] [Server thread/INFO]: Notch joined the game
+[23:34:07] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:34:07] [Server thread/INFO]: Notch left the game
+[23:35:54] [Server thread/INFO]: Notch[/127.0.0.1:65514] logged in with entity id 21961 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:35:54] [Server thread/INFO]: Notch joined the game
+[23:36:11] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:36:11] [Server thread/INFO]: Notch left the game
+[23:37:02] [Server thread/INFO]: Notch[/127.0.0.1:49189] logged in with entity id 22682 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:37:02] [Server thread/INFO]: Notch joined the game
+[23:37:07] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:37:07] [Server thread/INFO]: Notch left the game
+[23:37:56] [Server thread/INFO]: Notch[/127.0.0.1:49245] logged in with entity id 23055 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:37:56] [Server thread/INFO]: Notch joined the game
+[23:38:03] [Server thread/INFO]: Notch lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:38:03] [Server thread/INFO]: Notch left the game
+[23:38:09] [Server thread/INFO]: Notch[/127.0.0.1:49248] logged in with entity id 23104 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:38:09] [Server thread/INFO]: Notch joined the game
+[23:38:23] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:38:23] [Server thread/INFO]: Notch left the game
+[23:38:44] [Server thread/INFO]: Notch[/127.0.0.1:49290] logged in with entity id 23369 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:38:44] [Server thread/INFO]: Notch joined the game
+[23:38:51] [Server thread/INFO]: Notch lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:38:51] [Server thread/INFO]: Notch left the game
+[23:38:54] [Server thread/INFO]: Notch[/127.0.0.1:49293] logged in with entity id 23621 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:38:54] [Server thread/INFO]: Notch joined the game
+[23:41:52] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:41:52] [Server thread/INFO]: Notch left the game
+[23:42:20] [Server thread/INFO]: Notch[/127.0.0.1:49385] logged in with entity id 26875 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:42:20] [Server thread/INFO]: Notch joined the game
+[23:42:22] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Программа на вашем хост-компьютере разорвала установленное подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:42:22] [Server thread/INFO]: Notch left the game
+[23:42:27] [Server thread/INFO]: Notch[/127.0.0.1:49392] logged in with entity id 26921 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:42:27] [Server thread/INFO]: Notch joined the game
+[23:42:41] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:42:41] [Server thread/INFO]: Notch left the game
+[23:44:24] [Server thread/INFO]: Notch[/127.0.0.1:49472] logged in with entity id 27064 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:44:24] [Server thread/INFO]: Notch joined the game
+[23:44:31] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:44:31] [Server thread/INFO]: Notch left the game
+[23:45:12] [Server thread/INFO]: Notch[/127.0.0.1:49516] logged in with entity id 27206 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:45:12] [Server thread/INFO]: Notch joined the game
+[23:45:18] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:45:18] [Server thread/INFO]: Notch left the game
+[23:48:39] [Server thread/INFO]: Notch[/127.0.0.1:49667] logged in with entity id 27467 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:48:39] [Server thread/INFO]: Notch joined the game
+[23:48:42] [Server thread/INFO]: Notch lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:48:42] [Server thread/INFO]: Notch left the game
+[23:48:49] [Server thread/INFO]: Notch[/127.0.0.1:49676] logged in with entity id 27552 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:48:49] [Server thread/INFO]: Notch joined the game
+[23:49:46] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:49:46] [Server thread/INFO]: Notch left the game
+[23:50:24] [Server thread/INFO]: Notch[/127.0.0.1:49734] logged in with entity id 29411 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:50:24] [Server thread/INFO]: Notch joined the game
+[23:50:35] [Server thread/INFO]: Notch lost connection: TranslatableComponent{key='disconnect.genericReason', args=[Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение], siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:50:35] [Server thread/INFO]: Notch left the game
+[23:55:38] [Server thread/INFO]: Notch[/127.0.0.1:49889] logged in with entity id 29917 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:55:38] [Server thread/INFO]: Notch joined the game
+[23:55:45] [Server thread/INFO]: Notch lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:55:45] [Server thread/INFO]: Notch left the game
+[23:55:48] [Server thread/INFO]: Notch[/127.0.0.1:49893] logged in with entity id 30071 at (209.6523396178362, 72.67490443491741, 46.380695001213056)
+[23:55:48] [Server thread/INFO]: Notch joined the game
+[23:57:45] [Server thread/INFO]: Notch lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null}}
+[23:57:45] [Server thread/INFO]: Notch left the game
+] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[23:48:21] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Daylies!
+[23:48:22] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[23:48:22] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[23:48:22] [Sound Library Loader/INFO]: Sound engine started
+[23:48:39] [Client thread/INFO]: Connecting to localhost, 25565
+[23:48:49] [Client thread/INFO]: Connecting to localhost, 25565
+[23:49:45] [Client thread/INFO]: Stopping!
+[23:49:55] [main/INFO]: Setting user: Notch
+[23:49:57] [Client thread/INFO]: LWJGL Version: 2.9.1
+[23:50:09] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Daylies!
+[23:50:10] [Sound Library Loader/INFO]: Sound engine started
+[23:50:11] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[23:50:11] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[23:50:11] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Daylies!
+[23:50:12] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[23:50:12] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[23:50:13] [Sound Library Loader/INFO]: Sound engine started
+[23:50:24] [Client thread/INFO]: Connecting to localhost, 25565
+[23:50:34] [Client thread/INFO]: Stopping!
+[23:55:22] [main/INFO]: Setting user: Notch
+[23:55:23] [Client thread/INFO]: LWJGL Version: 2.9.1
+[23:55:32] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Daylies!
+[23:55:33] [Sound Library Loader/INFO]: Sound engine started
+[23:55:33] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[23:55:33] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[23:55:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Daylies!
+[23:55:34] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[23:55:34] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[23:55:35] [Sound Library Loader/INFO]: Sound engine started
+[23:55:38] [Client thread/INFO]: Connecting to localhost, 25565
+[23:55:48] [Client thread/INFO]: Connecting to localhost, 25565

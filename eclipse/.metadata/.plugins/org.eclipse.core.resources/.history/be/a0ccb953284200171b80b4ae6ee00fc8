@@ -1,0 +1,68 @@
+package ru.stepan1404.daylies.utils;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+public class RewardBase {
+	
+	public static List<String> rewards = new ArrayList<String>();
+	public static File file;
+	
+	public static void loadRewards(FMLPreInitializationEvent e){
+		file = new File(e.getModConfigurationDirectory() + "/daylies/rewards.cfg");
+		try {
+			if (file.exists()) {
+
+				FileReader fr;
+
+				fr = new FileReader(file);
+
+				BufferedReader br = new BufferedReader(fr);
+				String line;
+
+				while ((line = br.readLine()) != null) {
+					rewards.add(line);
+				}
+				fr.close();
+				br.close();
+			}
+		} catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+	}
+
+	public static void reloadRewards(){
+		try {
+			if (file != null && file.exists()) {
+
+				FileReader fr;
+
+				fr = new FileReader(file);
+
+				BufferedReader br = new BufferedReader(fr);
+				String line;
+
+				while ((line = br.readLine()) != null) {
+					rewards.add(line);
+				}
+				fr.close();
+				br.close();
+			}
+		} catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+	}
+}

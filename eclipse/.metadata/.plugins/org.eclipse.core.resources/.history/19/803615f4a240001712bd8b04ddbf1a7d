@@ -1,0 +1,20 @@
+package ru.stepan1404.daylies;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+@Mod(modid = "daylies")
+public class Daylies {
+	
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent e){
+		List<String> list = new ArrayList<String>();
+		e.getModMetadata().authorList = list;
+		e.getModMetadata().logoFile = "/logo.png";
+	}
+
+}
